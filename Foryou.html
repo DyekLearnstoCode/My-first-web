@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>28th Monthsary</title>
+    <link rel="stylesheet" href="foryou.css" />
+    <style>
+        /* Letter Styling */
+        .letter-container {
+            width: 80%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f8f8f8;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .letter-container p {
+            margin: 15px 0;
+            font-size: 18px;
+        }
+        .letter-header {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .letter-footer {
+            font-size: 16px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        button {
+            background-color: #e84393;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #d6336c;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Pictures.html">Pictures</a></li>
+                <li><a href="Foryou.html" class="active">For You</a></li>
+                <li><a href="Goal.html">Goals</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <section class="section">
+        <p style="font-size: 18px">Tap the button to reveal your surprise message!</p>
+        <button onclick="revealMessage()">Reveal</button>
+        <div id="hidden-message" class="hidden">
+            <div class="letter-container">
+                <p class="letter-header">Minamahal kong binibini,</p>
+
+                <p>Happy 28th monthsary and Merry Christmas! Gusto ko lang sabihin na sobrang saya ko na nakilala kita at alam mo na kung bakit. Tinuruan mo akong magmahal at pinaramdam mo rin sa'kin kung paano mahalin.</p>
+
+                <p>For the past few months na uhaw ako sa atensyon at immature pa'ko, salamat kasi hindi mo'ko iniwan ng dahil don namulat ako at naggrow, nabago mo yung pananaw ko at natulungan mo'kong maiba yung mindset ko. Salamat dahil sa pinaramdam mo sa'kin ang pagmamahal na matagal ko ng inaasam. Nawa'y hindi ka magsawang ibigay sa'kin ang iyong pagmamahal.</p>
+
+                <p>Lubos akong humihingi ng kapatawaran sa mga nagawa ko sa'yo ngayong taon na ito. Sana ay mapatawad mo ako sapagkat pinapangako ko sa'yo na hindi ko na uulitin ang aking mga pagkakamali. Pagpasensyahan mo na ako minsan kung may nagawa ako sa'yo na hindi ko maalala sapagkat ang aking memorya ay hindi na ganon katalas gaya ng dati pero wag kang mabahala dahil ang aking pagmamahal para sa iyo ay hindi ko makakalimutan kailan man.</p>
+
+                <p>Aking mahal, sa darating pang mga taon ay sana tayo parin ang magkasintahan sapagkat ikaw ay ina na ng aking tatlong anak sa aking panaginip. Hindi ako papayag na ikaw ay hindi ko magiging kasintahan, iiyak ako aking mahal.</p>
+
+                <p>Muli, nais kong magpasalamat sa masaya at madugong dalawampu't-walong buwan ng ating pagsasama bilang magshota. Nawa'y magtuloy-tuloy pa ang selebrasyon ng ating kakirihan na ito hanggang sa ito'y maging anibersaryo ng ating kasal.</p>
+
+                <p>Mahal na mahal kita aking Aina, may damit man o wala ikaw ay maganda. Kasama mo'ko palagi sa mga hamon ng problema kaya wag kang magdadalawang isip na lumapit sa akin—irog mo, kung kailangan mo ng karamay. Maraming salamat dahil naging shota kita. Padaba taka💙</p>
+
+                <p class="letter-footer">Lubos na nagmamahal sa iyo,<br>Ang imong future fiancè💖</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function revealMessage() {
+            const message = document.getElementById('hidden-message');
+            message.classList.toggle('hidden');
+        }
+    </script>
+
+    <!-- Footer -->
+    <footer>
+        <p>I love you, always. ❤️</p>
+    </footer>
+</body>
+</html>
