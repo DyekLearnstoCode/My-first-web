@@ -1,0 +1,149 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(229, 174, 212);
+    color: #333;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    align-items: center; /* Vertically align the items */
+}
+
+/* Navbar */
+.navbar {
+    top: 0;
+    position: fixed;
+    padding: 10px 20px;
+    width: 100%;
+    background-color: #f7d7f7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    animation: slideIn 1s ease-out;  /* Slide-in effect for navbar */
+    z-index: 1000;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    margin: 0;
+    list-style: none;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.navbar ul li {
+    font-size: 15px;
+    animation: bounceIn 1s ease-out;  /* Bounce-in animation for navbar items */
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #fb6bfb;
+    transform: scale(1.1);
+}
+/* Active Link */
+.navbar ul li a.active {
+    color: #fb6bfb;
+    font-weight: bold;
+}
+
+/* Content Section */
+.section {
+    max-width: 800px;
+    margin: 100px auto 50px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Spacing below navbar */
+.content {
+    margin-top: 60px; /* Prevent content from overlapping the navbar */
+    padding: 20px;
+    flex: 1; /* Let content take remaining height */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Section Headers */
+.section h2 {
+    color: #e84393;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 2rem;
+}
+
+.section p {
+    color: #6c5ce7;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
